@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.nav-menu li:hover {
+    color: rgb(38, 81, 190);
+}
+
+.nav-connect {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: linear-gradient(267deg, #aeeede 0.36%, #0f63de 102.6%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    color: white; /* Set the text color to white */
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}

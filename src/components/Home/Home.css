@@ -1,0 +1,59 @@
+.home {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.home img {
+    margin-top: 100px;
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Make sure height and width are equal to create a circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+    margin-bottom: 20px; /* Adds some space below the image */
+}
+
+.home h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.home h1 span{
+    background: linear-gradient(267deg, #aeeede 0.36%, #0f63de 102.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.home-action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-connect  {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(267deg, #aeeede 0.36%, #0f63de 102.6%);
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.home-connect:hover {
+    transform: scale(1.05);
+    
+}
+.home-resume{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:2px solid white;
+    cursor: pointer;
+}
+.home-resume:hover{
+    border-color:#0f63de ;
+}

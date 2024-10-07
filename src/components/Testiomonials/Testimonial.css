@@ -1,0 +1,59 @@
+/* Centered container for the testimonials */
+.testimonial-container {
+  position: relative;
+  width: 80vw;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Wrapper for sliding horizontally */
+.testimonial-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Smooth sliding */
+  width: 500vw; /* Set width based on the number of testimonials */
+}
+
+/* Each testimonial card takes full width of the viewport */
+.testimonial-card {
+  background: linear-gradient(267deg, #aeeede 0.36%, #0f63de 102.6%);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.testimonial-content {
+  max-width: 600px;
+}
+
+.testimonial-quote {
+  color: #47B5FF;
+}
+
+.testimonial-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+}
+
+.testimonial-author {
+  margin-top: 20px;
+}
+
+.testimonial-author-img {
+  width: 70px;
+  height: 70px;
+}
+
+.testimonial-author-info h4 {
+  margin: 0;
+  color: white;
+}
+
+.testimonial-author-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #dddddd;
+}

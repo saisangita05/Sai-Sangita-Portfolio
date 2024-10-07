@@ -1,0 +1,66 @@
+.mywork-container {
+    padding: 60px;
+    text-align: center;
+}
+
+.mywork-container h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    background: #ffffff; /* Default background color */
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(267deg, #aeeede 0.36%, #0f63de 102.6%);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover .project-image {
+    opacity: 0.3; /* Dim the image on hover */
+}
+
+.project-description {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 1.4em;
+    color:black;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-box:hover .project-description {
+    opacity: 1;
+}
